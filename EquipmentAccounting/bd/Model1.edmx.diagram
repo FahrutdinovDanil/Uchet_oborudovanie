@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9ccaf908bceb4c3cbbe25ee9df4bad38" Name="Diagram1" ZoomLevel="74">
+        <EntityTypeShape EntityType="Equipment_failure_accountingModel.Equipment_type" Width="1.5" PointX="6" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Equipment_failure_accountingModel.Production_plot" Width="1.5" PointX="3.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Equipment_failure_accountingModel.Сompany" Width="1.5" PointX="6" PointY="7.75" IsExpanded="true" />
+        <AssociationConnector ManuallyRouted="false" Association="Equipment_failure_accountingModel.FK_Сompany_Production_plot" />
+        <EntityTypeShape EntityType="Equipment_failure_accountingModel.sysdiagrams" Width="1.5" PointX="8.375" PointY="0.75" />
+        <EntityTypeShape EntityType="Equipment_failure_accountingModel.Position" Width="1.5" PointX="4.125" PointY="1.125" />
+        <EntityTypeShape EntityType="Equipment_failure_accountingModel.Employee" Width="1.5" PointX="8.25" PointY="8.125" />
+        <AssociationConnector Association="Equipment_failure_accountingModel.FK_Empl_Role" />
+        <EntityTypeShape EntityType="Equipment_failure_accountingModel.Breakdown_during_inspection" Width="1.5" PointX="12.875" PointY="7.125" />
+        <EntityTypeShape EntityType="Equipment_failure_accountingModel.Equipment" Width="1.5" PointX="8.375" PointY="4" />
+        <EntityTypeShape EntityType="Equipment_failure_accountingModel.Equipment_failure" Width="1.5" PointX="0.5" PointY="0.5" />
+        <EntityTypeShape EntityType="Equipment_failure_accountingModel.Technical_inspection" Width="1.5" PointX="10.625" PointY="5.875" />
+        <AssociationConnector Association="Equipment_failure_accountingModel.FK_Breakdown_during_inspection_Employee" />
+        <AssociationConnector Association="Equipment_failure_accountingModel.FK_Breakdown_during_inspection_Technical_inspection" />
+        <AssociationConnector Association="Equipment_failure_accountingModel.FK_Technical_inspection_Employee" />
+        <AssociationConnector Association="Equipment_failure_accountingModel.FK_Equipment_Equipment_type" />
+        <AssociationConnector Association="Equipment_failure_accountingModel.FK_Equipment_Production_plot" />
+        <AssociationConnector Association="Equipment_failure_accountingModel.FK_Technical_inspection_Equipment" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

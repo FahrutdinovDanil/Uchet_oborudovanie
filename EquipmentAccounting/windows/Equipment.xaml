@@ -1,0 +1,23 @@
+﻿<Window x:Class="EquipmentAccounting.Equipment"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EquipmentAccounting"
+        mc:Ignorable="d"
+        Title="Equipment" Loaded="Window_Loaded" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <DataGrid Name="EquipmentGrid" HorizontalAlignment="Left" AutoGenerateColumns="False" VerticalAlignment="Top" Height="410" Margin="0,0,-3,0" Width="795">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Id_equipment}" Header="Номер оборудования" Width="3*"/>
+                <DataGridTextColumn Binding="{Binding Name_equipment}" Header="Название" Width="3*"/>
+                <DataGridTextColumn Binding="{Binding Id_type}" Header="Номер типа оборудования" Width="3*" />
+                <DataGridTextColumn Binding="{Binding Id_plot}" Header="Номер участка" Width="3*" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

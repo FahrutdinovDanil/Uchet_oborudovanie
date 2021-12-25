@@ -1,0 +1,36 @@
+﻿<Page x:Class="EquipmentAccounting.Authorization"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:EquipmentAccounting"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="author">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Авторизация " FontSize="36" Grid.ColumnSpan="5" HorizontalAlignment="Center" Margin="10,10,10,10"/>
+        <TextBlock Text="Логин" FontSize="36" Grid.Column="1" Grid.Row="2" Width="200" Margin="10,10,10,10"/>
+        <TextBlock Text="Пароль" FontSize="36" Grid.Column="1" Grid.Row="3" Width="200" Margin="10,10,10,10"/>
+        <TextBox x:Name="txt_login" Grid.Row="2" Grid.Column="2"  Grid.ColumnSpan="2" Width="280" FontSize="36" Margin="-10,10,10,10"/>
+        <PasswordBox x:Name="txt_password" Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" Width="280"  FontSize="36" Margin="-10,10,10,10"/>
+        <Button Content="Войти" Grid.Column="2" Grid.Row="4"   Height="40" Width="130" FontSize="18"  Foreground="Black" Click="autho_event" Margin="10,10,10,10"/>
+
+    </Grid>
+</Page>

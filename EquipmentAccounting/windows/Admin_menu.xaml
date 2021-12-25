@@ -1,0 +1,37 @@
+﻿<Window x:Class="EquipmentAccounting.Admin_menu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EquipmentAccounting"
+        mc:Ignorable="d"
+        Title="Admin_menu" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFECEC57"  Offset="0"/>
+                <GradientStop Color="#FF118F95" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock FontSize="36"  Grid.Column="1" Grid.ColumnSpan="3" TextAlignment="Center"><Run Text="Меню "/><Run Text="Админа"/></TextBlock>
+        <Button Click="go_Reg" x:Name="add_Employee" Grid.Row="4" Content="Добавить сотрудника" FontSize="18" HorizontalContentAlignment="Center" Margin="30,0,77,10" RenderTransformOrigin="1,0.5" Grid.ColumnSpan="2" />
+        <Button Click="add_Equipment" x:Name="Add_Equipment" Grid.Row="4" Content="Добавить оборудование" FontSize="18" HorizontalContentAlignment="Center" Margin="147,1,99,10" RenderTransformOrigin="0.5,0.502" Grid.ColumnSpan="3" Grid.Column="1" />
+        <Button Content="Выйти" Grid.Row="4" FontSize="18" Grid.Column ="3"  Margin="140,1,47,10" RenderTransformOrigin="0.923,0.763" Grid.ColumnSpan="2" Click="Button_Click"/>
+        <Frame x:Name="Back"/>
+    </Grid>
+</Window>
